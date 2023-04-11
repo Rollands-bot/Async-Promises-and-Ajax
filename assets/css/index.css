@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+      background-color: #e3e7eb;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+}
+
+  /* navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-left li {
+    margin-left: 45px;
+  }
+  
+  .nav-left ul li {
+    font-size: 18px;
+  }
+
+  .nav-left ul li img {
+    vertical-align: middle;
+  }
+
+  .nav-left ul li a:hover {
+    color: grey;
+  }
+
+  .nav-left ul a-b.active{
+    color: grey;
+  }
+  
+  nav img {
+    width: 50px;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    background-color: black;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: white;
+    margin-right: 40px;
+  }
+  
+  .nav-right a:hover {
+    background-color: orangered;
+    color: white;
+  }
+  /* tutup navbar */
+
+      /* HAMBURGER */
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        border: none;
+      }
+      
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: black;
+      }
+
+      .listmenu {
+        background-color: white;
+        display: none;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      
+      .listmenu a {
+        text-decoration: none;
+        display: block;
+        color: black;
+      }
+  
+      /* LIST MENU HAMBURGER */
+  
+      .contactme-listmenu-1 a {
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 6px;
+        color: black;
+      }
+  
+      .contactme-listmenu-1 a:hover {
+        background-color: orangered;
+        color: white;
+      }
+  
+      .contactme-listmenu-2 a {
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 6px;
+        color: black;
+      }
+  
+      .contactme-listmenu-2 a:hover {
+        background-color: orangered;
+        color: white;
+      }
+  
+      .contactme-listmenu-3 a {
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 6px;
+        color: black;
+      }
+  
+      .contactme-listmenu-3 a:hover {
+        background-color: orangered;
+        color: white;
+      }
+      
+      .contactme-listmenu-4 a {
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 6px;
+        color: black;
+      }
+  
+      .contactme-listmenu-4 a:hover {
+        background-color: orangered;
+        color: white;
+      }
+      /* END HAMBURGER */
+
+  /* homepage */
+  .kartu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+    -webkit-box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+    border-radius: 15px;
+  }
+
+.kartu-left {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.kartu-left h1 {
+  display: flex;
+}
+
+.kartu p {
+  display: flex;
+}
+
+.contact  {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: black;
+    padding: 6px 24px;
+    border-radius: 24px;
+    color: white;
+}
+
+.button a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.curiculum {
+    margin-left: 16px;
+}
+
+.curiculum a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.curiculum  i {
+    margin-left: 8px;
+    color: #000000;
+}
+
+.kartu-right {
+  /* display: flex; */
+  flex-direction: column;
+  width: 50%;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+    background-color: white;
+    line-height: 1.4;
+    color: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+  }
+  
+  .image img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .self {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .self h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  .self p {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: baseline;
+    margin: 0;
+    padding-top: 25px;
+  }
+
+  .icon a {
+    height: 32px;
+    width: 32px;
+    background: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+  }
+
+  .icon a:hover{
+    background: orangered;
+  }
+
+  .icon .icon-b {
+    margin: 0 16px;
+  }
+
+  .icon .icon-c {
+    margin: 0 16px 16px 0;
+  }
+  /* tutup homepage */
+
+  /* RESPONSIVE */
+ 
+@media screen and (max-width:650px) {
+    .hamburger{
+      display: block;
+    }
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    body {
+      background-color: orangered;
+    }
+  
+    .kartu {
+      flex-wrap: wrap;
+      width: 100%;
+      /* display: none; */
+    }
+  
+    .kartu-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 30px;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+  
+      .nav-right a {
+        float: none;
+        width: 100%;
+        display: none;
+      }
+  
+      .nav-left li {
+        float: none;
+        width: 100%;
+        display: none;
+      }
+  }
+    /* END RESPONSIVE */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/contactMe.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <ul class="ul-left">
+                <a href="https://dumbways.id/" target="_blank"><img src="assets/img/logo.png" alt="Logo"></a>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                    <li class="a-b">
+                    <a href="myproject.html" class="active" target="_blank">My Project</a>
+                    </li>
+                    <li class="a-b-c" style="padding-left: -50%;">
+                        <a href="testimoni.html" class="active">Testimonials</a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contactMe.html" class="active" target="_blank">Contact Me</a>
+        </div>
+        <button class="hamburger" style="background-color: transparent;"onclick="openListMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="listmenu" id="menu">
+        <div class="contactme-listmenu-1">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="contactme-listmenu-2">
+            <a href="myproject.html">My Project</a>
+        </div>
+
+        <div class="contactme-listmenu-3">
+            <a href="testimoni.html">Testimonials</a>
+        </div>
+
+        <div class="contactme-listmenu-4">
+            <a href="contactMe.html">Contact Me</a>
+        </div>
+
+    </div>
+    <!-- tutup navbar -->
+
+    <!-- contact me -->
+    <h2>GET IN TOUCH</h2>
+    <form action="">
+        <div>
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Your Name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@gmail.com">
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" placeholder="+62xxxxx">
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+                <option>Let's Talk</option>
+                <option>Let's Collaboration</option>
+                <option>I am Hiring</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
+        <div class="to-right">
+            <button type="button" class="submits" onclick="getData()">Submit</button>
+        </div>
+    </form>
+    <!-- tutup contact me -->
+
+</body>
+    <script src="assets/js/contactMe.js"></script>
+</html>

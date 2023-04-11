@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/myproject.css">
+    
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <ul class="ul-left">
+                <a href="https://dumbways.id/" target="_blank"><img src="assets/img/logo.png" alt="Logo"></a>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                    <li class="a-b">
+                    <a href="myproject.html" class="active" target="_blank">My Project</a>
+                    </li>
+                    <li class="a-b-c" style="padding-left: -50%;">
+                        <a href="testimoni.html" class="active">Testimonials</a>
+                    </li>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contactMe.html" class="active" target="_blank">Contact Me</a>
+        </div>
+        <button class="hamburger" style="background-color: transparent;"onclick="openListMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="listmenu" id="menu">
+        <div class="contactme-listmenu-1">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="contactme-listmenu-2">
+            <a href="myproject.html">My Project</a>
+        </div>
+
+        <div class="contactme-listmenu-3">
+            <a href="testimoni.html">Testimonials</a>
+        </div>
+
+        <div class="contactme-listmenu-4">
+            <a href="contactMe.html">Contact Me</a>
+        </div>
+
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- PROJECT -->
+    <div class="myproject-form">
+        <form onsubmit="getProject(event)">
+        <h1>Add My Project</h1>
+        <div>
+            <label>Project Name</label>
+            <input type="text" id="project-name" placeholder="Enter the Project Name" required>
+        </div>
+        <div class="input-date">
+            <div>
+                <label>Start Date</label>
+                <input class="date" type="date" id="project-start" required>
+            </div>
+            <div>
+                <label>End Date</label>
+                <input class="date" type="date" id="project-end" required>
+            </div>
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea id="project-desc" placeholder="Enter Description not more than word" required></textarea>
+        </div>
+        <div class="input-checkbox">
+            <label>Technologies</label>
+            <div >
+                <div>
+                    <input type="checkbox" value="Node" id="node">
+                    <p>Node Js</p>
+                </div>
+                <div>
+                    <input type="checkbox" value="React" id="react">
+                    <p>React Js</p>
+                </div>
+            </div>
+            <div class="checkbox-right">
+                <div>
+                    <input type="checkbox" value="Next" id="next"> 
+                    <p>Next Js</p>
+                </div>
+                <div>
+                    <input type="checkbox" value="TypeScript" id="typescript"> 
+                    <p>TypeScript</p>
+                </div>
+            </div>
+        </div>
+        <div class="input-upload">
+            <label>Upload Image</label>
+            <input style="background-color: #dbdbdb;" type="file" id="img-file" required>
+        </div>
+        <div class="submit">
+            <button type="button" onclick="resetForm()">Clear</button>
+            <button>Submit</button>
+        </div>
+        <hr/>
+    </form>
+    </div>
+    <div class="myproject-list">
+        <h2>My Project</h2>
+        <div class="myproject-cardlist" id="project-list">
+        
+        </div>
+    </div>
+    <!-- End Project -->
+
+    <!-- Script JS -->
+
+    <script src="assets/js/myproject.js"></script>
+
+    <!-- End Script JS -->
+
+</body>
+</html>

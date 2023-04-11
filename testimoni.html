@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/testimoni.css">
+    <!-- <link rel="stylesheet" href="assets/css/testimoni.css"> -->
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <ul class="ul-left">
+                <a href="https://dumbways.id/" target="_blank"><img src="assets/img/logo.png" alt="Logo"></a>
+                    <li class="a">
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+
+                    <li class="b">
+                        <a href="myproject.html" class="active" target="_blank">My Project</a>
+                    </li>
+
+                    <li class="c">
+                        <a href="testimoni.html">Testimonials</a>
+                    </li>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contactMe.html" class="active" target="_blank">Contact Me</a>
+        </div>
+        <button class="hamburger" style="background-color: transparent;"onclick="openListMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="listmenu" id="menu">
+        <div class="contactme-listmenu-1">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="contactme-listmenu-2">
+            <a href="myproject.html">My Project</a>
+        </div>
+
+        <div class="contactme-listmenu-3">
+            <a href="testimoni.html">Testimonials</a>
+        </div>
+
+        <div class="contactme-listmenu-4">
+            <a href="contactMe.html">Contact Me</a>
+        </div>
+
+    </div>
+    <!-- Tutup Navbar -->
+
+    <!-- CONTAINER -->
+    <main>
+        <div class="heading">
+            <h1>My Testimonials</h1>
+            <div class="container-rating">
+                <h3> Rating By Star</h3>
+                <div class="rating-score">
+                    <button class="rating-btn" onclick="getAllTestimonial()">
+                        All
+                    </button>
+                    <button class="rating-btn" onclick="filterTestimonials(1)">
+                        1 <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button class="rating-btn" onclick="filterTestimonials(2)">
+                        2 <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button class="rating-btn" onclick="filterTestimonials(3)">
+                        3 <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button class="rating-btn" onclick="filterTestimonials(4)">
+                        4 <i class="fa-solid fa-star"></i>
+                    </button>
+                    <button class="rating-btn" onclick="filterTestimonials(5)">
+                        5 <i class="fa-solid fa-star"></i>
+                    </button>
+                </div>
+        </div>
+
+        <section class = "mytestimonials" id="testimony">
+        </section>
+    
+</main>
+
+    <!-- END CONTAINER -->
+
+</body>
+<script src="assets/js/ajax.js"></script>
+<!-- <script src="assets/js/hofcallback.js"></script> -->
+<!-- <script src="assets/js/testimoni.js"></script> -->
+</html>

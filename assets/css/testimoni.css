@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+      background-color: #e3e7eb;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+}
+
+  /* navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-left li {
+    margin-left: 45px;
+  }
+  
+  .nav-left ul li {
+    font-size: 18px;
+  }
+
+  .nav-left ul li img {
+    vertical-align: middle;
+  }
+
+  .nav-left ul li a:hover {
+    color: grey;
+  }
+
+  .nav-left ul a .active{
+    display: flex;
+    margin: auto;
+    color: grey;
+  }
+  
+  nav img {
+    width: 50px;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    background-color: black;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: white;
+    margin-right: 40px;
+  }
+  
+  .nav-right a:hover {
+    background-color: orangered;
+    color: white;
+  }
+  .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    
+    .listmenu {
+        background-color: white;
+        display: none;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    
+    .listmenu a {
+        text-decoration: none;
+        display: block;
+        color: black;
+    }
+    /* tutup navbar */
+
+    /* HAMBURGER */
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      background-color: black;
+    }
+
+    /* LIST MENU */
+
+    .contactme-listmenu-1 a {
+      text-decoration: none;
+      padding: 6px 20px;
+      border-radius: 6px;
+      color: black;
+    }
+
+    .contactme-listmenu-1 a:hover {
+      background-color: orangered;
+      color: white;
+    }
+
+    .contactme-listmenu-2 a {
+      text-decoration: none;
+      padding: 6px 20px;
+      border-radius: 6px;
+      color: black;
+    }
+
+    .contactme-listmenu-2 a:hover {
+      background-color: orangered;
+      color: white;
+    }
+
+    .contactme-listmenu-3 a {
+      text-decoration: none;
+      padding: 6px 20px;
+      border-radius: 6px;
+      color: black;
+    }
+
+    .contactme-listmenu-3 a:hover {
+      background-color: orangered;
+      color: white;
+    }
+    
+    .contactme-listmenu-4 a {
+      text-decoration: none;
+      padding: 6px 20px;
+      border-radius: 6px;
+      color: black;
+    }
+
+    .contactme-listmenu-4 a:hover {
+      background-color: orangered;
+      color: white;
+    }
+
+    /* END HAMBURGER */
+
+        /* CONTAINER */
+
+   .heading h1 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    }
+
+    .container-rating h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+      align-items: center;
+    }
+    
+    .rating-score {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+      margin-bottom: 30px;
+    }
+    
+    .rating-score :hover {
+      background-color: tomato;
+      color: #fff;
+     }
+
+    .rating-btn {
+      margin: 20px;
+      font-size: large;
+      background-color: #fff;
+    }
+
+    .rating {
+      text-align: right;
+    }
+
+    .mytestimonials {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 20%;
+      margin: 10px 20px 40px;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+      -webkit-box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+      -moz-box-shadow: 10px -11px 5px 0px rgba(0,0,0,0.17);
+      border-radius: 3%;
+      justify-content: center;
+    }
+
+    .photo-testimony {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .comment {
+      font-size: 16px;
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+    
+    .author {
+      font-weight: bold;
+      text-align: right;
+    }
+    /* TUTUP CONTAINER */
+
+    /* RESPONSIVE */
+    
+    @media screen and (max-width:670px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    body {
+      background-color: orangered;
+    }
+
+    .card {
+      width: 100%;
+  }
+}
+  
+  @media screen and (max-width: 670px) {
+  
+      .nav-right a {
+        float: none;
+        width: 100%;
+        display: none;
+      }
+  
+      .nav-left li {
+        float: none;
+        width: 100%;
+        display: none;
+      }
+  }
